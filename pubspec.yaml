@@ -1,0 +1,19 @@
+name: flutter_gauge_example
+description: A Flutter project demonstrating how to create animated gauges
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+  flutter: '>=1.10.2-pre.54'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
