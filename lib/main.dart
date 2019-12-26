@@ -39,6 +39,13 @@ class _MainPageState extends State<MainPage> {
 	GaugeDriver _driver = GaugeDriver();
 
 	@override
+	initState() {
+
+		super.initState();
+		_driver.listen((x) => setState(() { }) );
+	}
+
+	@override
 	Widget build(BuildContext context) {
    
 		return Scaffold(

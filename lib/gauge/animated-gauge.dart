@@ -4,7 +4,7 @@ import 'package:flutter_gauge_example/gauge/gauge-painter.dart';
 
 class AnimatedGauge extends StatefulWidget {
 
-	const AnimatedGauge({ 
+	const AnimatedGauge({
 		Key key,
 		@required this.driver
 	}) : super(key: key);

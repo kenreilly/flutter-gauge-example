@@ -2,7 +2,7 @@ import 'dart:async';
 
 class GaugeDriver {
 
-	GaugeDriver() { _controller = StreamController(); }
+	GaugeDriver() { _controller = StreamController.broadcast(); }
 
 	StreamController _controller;
 
