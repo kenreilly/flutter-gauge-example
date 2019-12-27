@@ -25,7 +25,6 @@ class GaugeState extends State<AnimatedGauge> with SingleTickerProviderStateMixi
 
 	double begin = 0.0;
 	double end = 0.0;
-	bool complete = false;
 
 	@override
 	void initState() {
@@ -35,12 +34,12 @@ class GaugeState extends State<AnimatedGauge> with SingleTickerProviderStateMixi
 		widget.driver.listen(on);
 	}
 
-	void on(dynamic data) => setState(() {
+	void on(dynamic x) => setState(() {
 		begin = end; 
-		end = data;
-		complete = false;
+		end = x;
 	});
-	TextStyle _style = TextStyle(
+
+	final TextStyle _style = TextStyle(
 		color: Colors.orange[50].withOpacity(0.9), 
 		fontSize: 32, 
 		fontWeight: FontWeight.w200,
