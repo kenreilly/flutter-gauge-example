@@ -13,6 +13,7 @@ class AnimatedGauge extends StatefulWidget {
 
 	@override
 	GaugeState createState() => GaugeState();
+
 }
 
 class GaugeState extends State<AnimatedGauge> with SingleTickerProviderStateMixin {
@@ -39,7 +40,6 @@ class GaugeState extends State<AnimatedGauge> with SingleTickerProviderStateMixi
 		end = data;
 		complete = false;
 	});
-
 	TextStyle _style = TextStyle(
 		color: Colors.orange[50].withOpacity(0.9), 
 		fontSize: 32, 

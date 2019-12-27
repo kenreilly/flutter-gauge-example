@@ -18,7 +18,7 @@ class GaugePainter extends CustomPainter {
 			..style = PaintingStyle.stroke;
 
 		Paint elapsedBrush = new Paint()
-			..strokeWidth = 2.0
+			..strokeWidth = 2
 			..color = color.withOpacity(0.8)
 			..style = PaintingStyle.stroke;
 
@@ -33,5 +33,5 @@ class GaugePainter extends CustomPainter {
 	}
 
 	@override
-  	bool shouldRepaint(CustomPainter oldDelegate) => true;
+	bool shouldRepaint(CustomPainter oldDelegate) => true;
 }

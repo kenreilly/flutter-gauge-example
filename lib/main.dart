@@ -1,9 +1,7 @@
-import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:flutter_gauge_example/gauge/animated-gauge.dart';
 import 'package:flutter/foundation.dart' show debugDefaultTargetPlatformOverride;
-
-import 'gauge/gauge-driver.dart';
+import 'package:flutter_gauge_example/gauge/animated-gauge.dart';
+import 'package:flutter_gauge_example/gauge/gauge-driver.dart';
 
 void main() {
 
@@ -14,6 +12,7 @@ void main() {
 class GaugeDemo extends StatelessWidget {
 	
 	static const String _title = 'Flutter Gauge Example';
+
 	@override
 	Widget build(BuildContext context) {
 

@@ -10,7 +10,7 @@ class GaugeDriver {
 
 	bool get maxed => (_current > 0.99);
 
-	void listen(Function x) { _controller.stream.listen(x); }
+	void listen(Function x) => _controller.stream.listen(x);
 
 	void drive(double x) {
 
